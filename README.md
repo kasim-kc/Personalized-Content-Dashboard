@@ -4,7 +4,7 @@ A modern, responsive content dashboard built with React, TypeScript, and Tailwin
 
 ## 🌟 Live Demo
 
-[View Live Application](https://your-demo-link.vercel.app)
+The APIs that I am using required upgraded plan if this site is used in production. SO SORRY FOR THAT 😢
 
 ## 🚀 Features
 
