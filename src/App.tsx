@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistor } from "./store/store";
 import { Toaster } from "react-hot-toast";
 import DashboardLayout from "./components/dashboard/DashboardLayout";
 import FeedSection from "./components/dashboard/FeedSection";
@@ -9,20 +11,22 @@ import NotFound from "./components/ui/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Toaster position="top-right" />
-        <Routes>
-          <Route path="/" element={<DashboardLayout />}>
-            <Route index element={<FeedSection />} />
-            <Route path="trending" element={<TrendingSection />} />
-            <Route path="favorites" element={<FavoritesSection />} />
-            <Route path="settings" element={<SettingsPanel />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <PersistGate loading={null} persistor={persistor}>
+      <BrowserRouter>
+        <div className="App">
+          <Toaster position="top-right" />
+          <Routes>
+            <Route path="/" element={<DashboardLayout />}>
+              <Route index element={<FeedSection />} />
+              <Route path="trending" element={<TrendingSection />} />
+              <Route path="favorites" element={<FavoritesSection />} />
+              <Route path="settings" element={<SettingsPanel />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </PersistGate>
   );
 }
 
