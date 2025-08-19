@@ -12,7 +12,6 @@ const LoadingSpinner = () => {
           }`}
         ></div>
 
-        {/* Spinning ring */}
         <div
           className={`w-12 h-12 rounded-full animate-spin border-4 ${
             darkMode
