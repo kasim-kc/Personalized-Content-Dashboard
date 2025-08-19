@@ -8,7 +8,7 @@ The APIs that I am using required upgraded plan if this site is used in producti
 
 ## Project Architecture
 
-(./architecture.png)
+![Architecture](./architecture.png)
 
 ## Video Link showcasing Implementation
 
