@@ -6,6 +6,14 @@ A modern, responsive content dashboard built with React, TypeScript, and Tailwin
 
 The APIs that I am using required upgraded plan if this site is used in production. SO SORRY FOR THAT 😢
 
+## Project Architecture
+
+(./architecture.png)
+
+## Video Link showcasing Implementation
+
+https://drive.google.com/file/d/12Tt-50nFg_jbdM9mWbUFat_styPA47E0/view?usp=drive_link
+
 ## 🚀 Features
 
 - **Personalized Content Feed** - News, movies, and social posts based on user preferences
